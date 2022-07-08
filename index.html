@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="formBlock">
+
+        <form name="form1" id="form1-block">
+
+            <h1 class="jurosH1">Calculadora de Juros</h1>
+
+            <div class="td1">
+                <div  colspan="2" nowrap="nowrap">
+
+                    <strong class="block1-strong">Calcule a informação desejada</strong><br />
+                    <span class="textoPequeno">(Informe 3 valores e pressione o botão &#8216;Calcular&#8217; para
+                        obter o valor dos juros)</span>
+                </div>
+            </div>
+
+            
+
+            <div class="td2">
+                <div>
+                    <label class="lable1" for="meses">Nº de meses:</label></p>
+                </div>
+                <div class="td3">
+                    <input name="periodo" id="meses" size="10" title="Digite o número de meses" tabindex="1" value=""
+                        type="text">
+                </div>
+            </div>
+
+            <div class="td4">
+                <div scope="row">
+                    <label for="juros" class="label1">Taxa de juros mensal (Em %) </label>
+                </div>
+                <div class="td5">
+                    <input name="juros" id="juros" size="10" tabindex="2" title="Digite taxa de juros mensal" value=""
+                        type="text">
+                </div>
+            </div>
+
+
+            <div class="td6">
+                <div scope="row">
+                    <label for="prestacao"><br />
+                        <span class="pe">
+                            Valor da prestação:
+                        </span> </p>
+                        <p > <span class="tdSpan1">(Considera-se que a 1a. prestação não seja no
+                                ato.)</span><br />
+                    </label>
+                </div>
+                <div class="td7">
+                    <input name="parcela" id="prestacao" size="16" tabindex="3" title="Digite valor da prestação"
+                        value="" type="text">
+                </div>
+            </div>
+
+    
+
+            <div class="td8">
+                <div scope="row">
+                    <p> <label for="montante"><br />
+                            <span class="pe">
+                                Valor financiado:
+                            </span> <br />
+                            <span class="tdSpan2">(O Valor financiado não inclui o valor da
+                                entrada.)</span></label>
+                </div>
+
+                <div class="td9">
+                    <input name="montante" size="16" tabindex="4" title="Digite o valor financiado" id="montante"
+                        value="" type="text">
+                </div>
+            </div>
+
+            <div class="td10">
+                <div colspan="2">
+                    <input class="calcular" value="Calcular" onclick="Calcular()" onkeypress="Calcular()" tabindex="5"
+                        type="button">&nbsp;</p>
+                    <input class="limpar" value="Limpar" onclick="Limpar()" onkeypress="Limpar()" tabindex="6"
+                        type="button">
+                </div>
+            </div>
+
+            <img src="./images/Manage money-amico.png" id="ladoA">
+            <img src="./images/Manage money-cuate.png" id="ladoB">
+        </form>
+
+
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
